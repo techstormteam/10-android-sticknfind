@@ -1,0 +1,88 @@
+Change v3.00
+- code cleanup
+- removed Samsung 4.2 support
+- added Android SDK Documentation
+
+Change v2.12
+- handle nullpointer exception in discoveredServices
+- handle wrong characteristic type
+
+Change log v2.11
+- added custom connection interval configuration(setBaseInterval)
+- fixed int conversion problem
+- added magic & version check for calibration
+- added index parameter for readAdvertisementData method
+- added missing BATTERY_TYPE handling
+
+Change log v2.10
+- removed 2s wait time after ACL connection
+- made CMD reads dynamic( no extra reads for custom classes)
+- fixed async firmware file issue
+
+Change log v2.09
+- added function resetFactory
+
+Change log v2.08
+- added LeSnfDevice in didReadCSVCValue function
+
+Change log v2.07
+- fix wrong offset for didReadAdvertisement callback
+
+Change log v2.06
+- create Custom classes
+- added firmware force method
+
+Change log v2.05
+- added iBeacon calibration fix
+
+Change log v2.04
+- added read function for advertisement settings
+- modified sBeacon & iBeacon input to hex string
+
+Change log v2.03
+- added common ext_cmd write
+- added external read & write callback for characteristic read & write
+- added getBatteryVoltage()
+- added getFirmwareVersion()
+
+Change log v2.02
+- workaround for ADV_SETTINGS with 0x77 for connection
+- fixed wrong handled 0 for iBeacon TX
+
+Change log v2.01
+- fixed byte conversion for TX signal
+
+Change log v2.00
+- added firmware update support for extended CR2477 bleTags
+-> changed ending of firmware files to .aac
+- fixed speed issue for updating
+- fixed empty read issue
+
+Change log v1.14
+- fixed iBeacon TX power
+
+Change log v1.13
+- added function writeAdvRssiSettings(int setting)
+
+Change log v1.12:
+- added writeDeviceName(String name)
+- added enableNewRervseRssi(boolean enable) 
+
+Change log v1.11:
+
+- added 0x80 auto read back command
+- fixed double reads of temperature
+- fixed reseting of transfer speed after each characteristic read
+- added final temperature log
+- added callbacks: 
+		public void didUpdateTemperatureLog(LeSnfDevice mDevice,
+				HashMap<String, Object>[] tempLog) ;
+
+Change log v1.10:
+
+- added Melody function
+- alpha status temperature logging
+- added callbacks: 
+		public void didWriteUserTemperatureCalChar(LeSnfDevice mDevice);
+		public void didReadTemperatureLog(LeSnfDevice mDevice,
+				HashMap<String, Object>[] tempLog) ;

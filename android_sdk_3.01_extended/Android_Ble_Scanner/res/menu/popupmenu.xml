@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:id="@+id/group_popupmenu">
+      <item android:id="@+id/reset"
+          android:title="Reset"/>
+      <item android:id="@+id/connect"
+          android:title="Connect"/>
+      <item android:id="@+id/disconnect"
+          android:title="Disconnect"/>
+      <item android:id="@+id/sleep"
+          android:title="Sleep"/>
+      <item android:id="@+id/advsettings"
+          android:title="Read Settings"/>
+      <item android:id="@+id/alert"
+          android:title="Alert"/>
+      <item android:id="@+id/melody"
+          android:title="Melody"/>
+      <item android:id="@+id/tempon"
+          android:title="TempLog On"/>
+      <item android:id="@+id/tempoff"
+          android:title="TempLog Off"/>
+      <item android:id="@+id/high"
+          android:title="High Speed"/>
+      <item android:id="@+id/slow"
+          android:title="Slow Speed"/>
+      <item android:id="@+id/cbond"
+          android:title="Create Bond"/>
+      <item android:id="@+id/rbond"
+          android:title="Remove Bond"/>
+      </group>
+</menu>
